@@ -11,39 +11,52 @@
 > topic:keep name
 + my name is *1
 - Nice to meet you <cap1>! I want to learn a bit about you and your addiction. This will take  2 - 3
-^ minutes and you'll only need to get started. Do you consider yourself an addict? 
+^ minutes and you'll only need to get started. Do you consider yourself an addict?
 
 + yes
-- Great. I want to know about how you view yourself. Are you and addict?
+- Okay, what're your drug(s) of choice?{topic=drugTypes}
 
-+ Yes
-- Thanks for being honest. Honesty is at the crux of this type of treatment.{topic=addictionTest}
-
-+ alone
-- I understand, What how many times per week do you use? {topic=addictionAlone}
-
-+ [in] [a] group
-- I understand <pcap1>. How'd you meet these friends?{topic=addictionGroups}
++ no
+- Thanks for being honest. Honesty is at the crux of this type of treatment.
 
 < topic
 
 > topic:keep addictionTest
 
-+ *
-- Have you used drugs other than those required for medicinal reasons?
++  * (weed, marijuana, pot, dope, hashish, hash) *
+-  How much do you use? {topic=weed}
+
++ * (opiates, heroine, perscriptions) *
+- How often do you use? {topic=opiates}
+
++  * (alcohol, liquor, beer) *
+-  How much do you drink per day? {topic=alcohol}
+
++  * (cocaine, crack) *
+- Can you get through the week without using drugs?
+
++  * (cocaine, cracks ) *
+- Can you get through the week without using drugs?
+
+
 
 + (yes|no)
 - Can you get through the week without using drugs?
 
-+ (yes|no)
-- Can you get through the week without using drugs?
+< topic
+
+> topic:keep drugTypes
+
++ * I use *
+- How much do you typically use per month?
+
+
+
 
 
 < topic
 
-
 > topic:keep Alone
-
 + *
 - You are in solo
 
